@@ -1,5 +1,6 @@
 #Leia 20 valores reais e escreva o seu somatório.
 
+
 valores = float(1)
 soma = 0
 
