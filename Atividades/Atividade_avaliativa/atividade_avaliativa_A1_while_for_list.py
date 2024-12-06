@@ -39,7 +39,7 @@ while True:
         if cadastrados < 46:
             matricula[cadastrados] = int(input('Matrícula: '))
             nome[cadastrados] = input('nome: ')
-            cpf[cadastrados] = int(input('cpf - apenas números: '))
+            cpf[cadastrados] = input('cpf: ')
             email[cadastrados] = input('e-mail: ')
             media[cadastrados] = float(input('Média: '))
             print('Cadastro realizado com sucesso.')
@@ -65,7 +65,7 @@ while True:
     elif op == 3:
         if cadastrados > 0:
             for i in range(cadastrados):
-                if media[i] >= 7:
+                if media[i] >= 70:
                     situacao[i] = 'Aprovado'
                 else:
                     situacao[i] = 'Reprovado'
@@ -89,7 +89,7 @@ while True:
                 
                 if op_2 == 1:
                     for i in range(cadastrados):
-                        if media[i] >= 7:
+                        if media[i] >= 70:
                             quant += 1
                             print('Matrícula:', matricula[i])
                             print('Nome:', nome[i])
@@ -101,7 +101,7 @@ while True:
                     print('Alunos aprovados: ', quant)
                 elif op_2 == 2:
                     for i in range(cadastrados):
-                        if media[i] < 7:
+                        if media[i] < 70:
                             quant += 1
                             print('Matrícula:', matricula[i])
                             print('Nome:', nome[i])
